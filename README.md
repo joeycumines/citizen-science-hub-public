@@ -2,7 +2,10 @@
 
 This is team Mongoose's project "Citizen Science Hub", for Dr Dunbabin of QUT.
 
-##Rationale
+All work in this project remains copyright of the relevant holders, and all rights are reserved. Not to be reused or 
+reproduced in any way.
+
+## Rationale
 The reason given for this project, was to facilitate 'citizen science' initiatives, using image recognition and geo-tagging technology.
 By identifying the contents of the picture, taken at a given date, and location, scientists can gain valuable data and insight into
 various fields of research.
@@ -13,14 +16,14 @@ deteriorating health of the great barrier reef.
 The intent was to process images with Dr Dunbabin's own machine learning algorithm, however due to the nature of a commercial agreement,
 a place holder, "green" identifying python script, has been used.
 
-##Architecture
+## Architecture
 The server runs a LAMP stack, and the bulk of the code is done in php. Images are stored in a single folder, owned by the PHP process,
 on the server itself. On upload and verification, images are moved there for further processing , references (relative) stored in the db.
 From there, a python script that runs in a single thread (one image at a time) polls the localhost and GETs the next one out of a
 prioritized queue. Upon processing completion, the the processed image relative path is then GET back to the localhost.
 EXIF extraction is handled in PHP. Other metadata such as location data may be retrieved in JavaScript on upload.
 
-##Git Structure
+## Git Structure
 - mysql : contains database structure dumps, for use with a mysql server
 	- Dump20160603.sql : the latest, up to date dump
 - scripts

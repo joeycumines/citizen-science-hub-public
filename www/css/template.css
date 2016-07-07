@@ -1,0 +1,12 @@
+/*
+	Put default styles here.
+*/
+
+/* This is for our navbar, might have to adjust for different viewports. */
+body {
+	padding-top: 50px;
+}
+
+#logo {
+	height: 100%;
+}

@@ -25,7 +25,7 @@ EXIF extraction is handled in PHP. Other metadata such as location data may be r
 
 ## Git Structure
 - mysql : contains database structure dumps, for use with a mysql server
-	- Dump20160603.sql : the latest, up to date dump
+	- Dump20160707.sql : the latest, up to date dump
 - scripts
 	- server.py : the python processing script that runs independently to the web server, on the same machine
 - www : the web content, for use on a LAMP stack
